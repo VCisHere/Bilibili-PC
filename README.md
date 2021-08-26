@@ -1,7 +1,7 @@
 # Bilibili-PC
 用Python实现获取B站个人推荐页
 
-<img src="pic.png" style="zoom: 67%;" />
+<img src="pic.png"  />
 
 
 
