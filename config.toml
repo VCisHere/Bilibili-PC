@@ -1,0 +1,16 @@
+[user]
+access_token = ""
+refresh_token = ""
+
+[command]
+login_password = [ "login", "lg",]
+login_token = [ "login token", "lt",]
+refresh_token = [ "refresh token",]
+recommend = [ "recommend", "r",]
+get_user_info = [ "user info", "info",]
+help = [ "help", "?", "h",]
+clear = [ "clear", "c",]
+exit = [ "exit", "quit", "q",]
+
+[misc]
+display_help = true
