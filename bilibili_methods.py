@@ -118,10 +118,10 @@ class Bilibili:
                     if (response_json['code'] == -449):
                         logging.getLogger("bili_str").info(
                             "服务器繁忙，尝试使用v3接口登录...")
-                        self.login_password(user, "v3")
+                        self.login_password(user, "v3", captcha)
                         return
 
-                    elif response_json['code'] == -105:
+                    elif response_json['code'] == -105 or response_json['code'] == 0 and response_json['data']['status'] == 2:
                         captchaUrl = "https://passport.bilibili.com/captcha"
                         headers = {'Host': "passport.bilibili.com"}
                         captchaResponse = user.session.get(
